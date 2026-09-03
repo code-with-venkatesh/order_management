@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 E-Commerce Order Management System
 Project Overview
 The E-Commerce Order Management System is a Java-based application designed to manage product inventory, customer orders, and payments efficiently. Built using Hexagonal Architecture, it ensures a clean separation between business logic and infrastructure, making the system scalable, maintainable, and testable.
@@ -26,3 +27,6 @@ Key Features
 ✅ Order Management – Create, update, and cancel orders with multiple statuses.
 ✅ Payment Integration – Support for payment gateways like Stripe or PayPal.
 ✅ Scalability – Follows Hexagonal Architecture for modular expansion.
+=======
+# order_management
+>>>>>>> d0a7459e77d1c88636bd6a28bae197568e37e4a3
