@@ -13,7 +13,7 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 
 @Configuration
 @Profile("mongodb")
-@EnableMongoRepositories(basePackages = "com.example.order_management.infrastructure.mongodb.repository")
+@EnableMongoRepositories(basePackages = "org.example.order_management.infrastructure.mongodb.repository")
 public class MongoConfig extends AbstractMongoClientConfiguration {
 
     @Override

@@ -1,4 +1,9 @@
 package org.example.order_management.application.port.output;
 
-public class UserOutput {
+import java.util.Optional;
+import org.example.order_management.domain.entity.User;
+
+public interface UserOutput {
+    Optional<User> findByEmail(String email);
+    User save(User user);
 }

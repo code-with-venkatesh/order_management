@@ -1,6 +1,5 @@
 package org.example.order_management.infrastructure.rest.adapter;
 
-
 import org.example.order_management.application.port.input.UserLoginUseCase;
 import org.example.order_management.domain.entity.User;
 import org.example.order_management.infrastructure.rest.dto.request.LoginRequest;
@@ -8,16 +7,18 @@ import org.example.order_management.infrastructure.rest.dto.request.SignupReques
 import org.example.order_management.infrastructure.rest.dto.response.UserResponse;
 
 import jakarta.validation.Valid;
-import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/users")
-@RequiredArgsConstructor
 public class UserController {
 
     private final UserLoginUseCase userLoginUseCase;
+
+    public UserController(UserLoginUseCase userLoginUseCase) {
+        this.userLoginUseCase = userLoginUseCase;
+    }
 
     @PostMapping("/login")
     public ResponseEntity<UserResponse> login(@Valid @RequestBody LoginRequest loginRequest) {
